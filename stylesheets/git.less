@@ -2,8 +2,14 @@
 @import "ui-variables";
 
 .status { .text(normal); }
-.status-added { .text(info); }
+.status-added { .text(success); }
 .status-ignored { .text(subtle); }
-.status-modified { .text(warning); }
+.status-modified {
+  color: @blue;
+  text-shadow: none;
+}
 .status-removed { .text(error); }
-.status-renamed { .text(success); }
+.status-renamed {
+  color: @yellow;
+  text-shadow: none;
+}
