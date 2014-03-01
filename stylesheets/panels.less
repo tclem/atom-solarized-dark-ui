@@ -21,7 +21,7 @@
   }
 
   &.panel-left {
-    border-right: 1px solid @tool-panel-border-color;
+    border-right: 2px solid @tool-panel-border-color;
   }
 }
 
@@ -43,16 +43,16 @@
   border-top: 1px solid fadein(@background-color-highlight, 10%);
 
   background-color: transparent;
-  background-image: -webkit-linear-gradient(@panel-heading-background-color, darken(@panel-heading-background-color, 10%));
+  background-image: -webkit-linear-gradient(@panel-heading-background-color, darken(@panel-heading-background-color, 2%));
 
   .btn {
     padding-left: 8px;
     padding-right: 8px;
 
-    @bg: lighten(@button-background-color, 10%);
-    @hover: lighten(@button-background-color-hover, 10%);
-    @selected: lighten(@button-background-color-selected, 10%);
-    @text: lighten(@text-color, 10%);
-    .btn-background(@bg, @hover, @selected, @text);
+    // @bg: lighten(@button-background-color, 10%);
+    // @hover: lighten(@button-background-color-hover, 10%);
+    // @selected: lighten(@button-background-color-selected, 10%);
+    // @text: lighten(@text-color, 10%);
+    // .btn-background(@bg, @hover, @selected, @text);
   }
 }
