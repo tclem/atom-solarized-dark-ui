@@ -5,21 +5,15 @@
   color: @text-color;
   background-color: @color;
   border: 1px solid @button-border-color;
-  // background-image: -webkit-linear-gradient(@color, darken(@color, 5%));
 
   &:hover {
     color: @text-color-highlight;
     background-color: @hover-color;
-    // background-image: -webkit-linear-gradient(@hover-color, darken(@hover-color, 5%));
   }
   &.selected,
   &.selected:hover {
     color: @text-color-highlight;
     background-color: @selected-color;
-    // background-image: -webkit-linear-gradient(darken(@selected-color, 15%), @selected-color);
-    &:hover {
-      // background-image: -webkit-linear-gradient(@selected-color, darken(@selected-color, 5%));
-    }
   }
 }
 

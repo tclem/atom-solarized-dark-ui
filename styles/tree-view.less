@@ -2,11 +2,14 @@
 
 .tree-view {
   font-size: @font-size;
-  // background: @tree-view-background-color;
 
   .selected:before {
   	background: @base02;
     box-shadow: inset -2px 0 3px rgba(0,0,0, .1);
+  }
+
+  .status-added {
+    color: @text-color-success !important;
   }
 }
 
@@ -22,11 +25,8 @@
       background: lighten(@base02, 2%);
     }
 
-    .selected > .name,
-    .selected > .name:before,
-    .selected > .list-item > .name,
-    .selected > .list-item > .name:before {
-      color: @base2 !important;
+    .selected.status-added {
+      color: lighten(@text-color-success, 20%) !important;
     }
   }
 }

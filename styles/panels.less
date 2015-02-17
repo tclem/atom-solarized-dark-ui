@@ -2,25 +2,22 @@
 @import "ui-variables";
 @import "buttons";
 
-.panel {
+atom-panel {
+  position: relative;
+  background-color: @tool-panel-background-color;
+  .text(normal);
+
   &.bordered {
     border: 1px solid @base-border-color;
     border-radius: @component-border-radius;
   }
-}
 
-.tool-panel {
-  .text(normal);
-  position: relative;
-
-  background-color: @tool-panel-background-color;
-
-  &.panel-bottom {
+  &.atom-panel.bottom {
     border-top: 1px solid @tool-panel-border-color;
     box-shadow: inset 0 1px 0 @background-color-highlight;
   }
 
-  &.panel-left {
+  &.atom-panel.left {
     border-right: 2px solid @tool-panel-border-color;
   }
 
@@ -32,12 +29,6 @@
 .inset-panel {
   position: relative;
   background-color: @inset-panel-background-color;
-}
-
-.is-blurred {
-  .tool-panel,
-  .inset-panel {
-  }
 }
 
 .panel-heading {
@@ -52,11 +43,9 @@
   .btn {
     padding-left: 8px;
     padding-right: 8px;
-
-    // @bg: lighten(@button-background-color, 10%);
-    // @hover: lighten(@button-background-color-hover, 10%);
-    // @selected: lighten(@button-background-color-selected, 10%);
-    // @text: lighten(@text-color, 10%);
-    // .btn-background(@bg, @hover, @selected, @text);
   }
+}
+
+.status-bar {
+  color: @base01;
 }
