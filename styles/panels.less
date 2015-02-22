@@ -2,23 +2,32 @@
 @import "ui-variables";
 @import "buttons";
 
+.panel {
+  &.bordered {
+    border: 1px solid @base-border-color;
+    border-radius: @component-border-radius;
+  }
+}
+
 atom-panel {
+  .text(normal);
   position: relative;
   background-color: @tool-panel-background-color;
-  .text(normal);
 
   &.bordered {
     border: 1px solid @base-border-color;
     border-radius: @component-border-radius;
   }
 
-  &.atom-panel.bottom {
+  &.left {
+    border-right: 1px solid @tool-panel-border-color;
+  }
+  &.right {
+    border-right: 2px solid @tool-panel-border-color;
+  }
+  &.bottom {
     border-top: 1px solid @tool-panel-border-color;
     box-shadow: inset 0 1px 0 @background-color-highlight;
-  }
-
-  &.atom-panel.left {
-    border-right: 2px solid @tool-panel-border-color;
   }
 
   a {
