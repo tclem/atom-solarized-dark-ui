@@ -78,7 +78,7 @@
   .tab.active {
     z-index: 10;
     line-height: @tab-height - 3px;
-    color: @text-color-highlight;
+    color: @tab-text-color;
     box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.1);
     border: none;
 
@@ -92,7 +92,7 @@
     }
 
     &, &:before {
-      background-image: -webkit-linear-gradient(top, lighten(@tab-background-color-active, 1%), @tab-background-color-active);
+      background-image: -webkit-linear-gradient(top, lighten(@tab-background-color-active, 5%), @tab-background-color-active);
       height: @tab-height + 1px;
     }
 
@@ -103,7 +103,7 @@
   }
 
   .tab:hover {
-    color: @text-color-highlight;
+    color: @base3;
   }
 
   .tab.active:hover .close-icon {
