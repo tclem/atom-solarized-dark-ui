@@ -4,11 +4,12 @@
 .btn-background (@color, @hover-color, @selected-color, @text-color) {
   color: @text-color;
   background-color: @color;
-  border: 1px solid @button-border-color;
+  border: 1px solid darken(@color, 10%);
 
   &:hover {
     color: @text-color-highlight;
     background-color: @hover-color;
+    border: 1px solid lighten(@color, 20%);
   }
   &.selected,
   &.selected:hover {
@@ -26,6 +27,7 @@
 
 .btn {
   .btn-background(@button-background-color, @button-background-color-hover, @button-background-color-selected, @text-color);
+  border: 1px solid @button-border-color;
 }
 
 .btn.btn-primary {
