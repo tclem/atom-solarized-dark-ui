@@ -1,7 +1,7 @@
 {
   "name": "atom-solarized-dark-ui",
   "theme": "ui",
-  "version": "0.27.0",
+  "version": "0.28.0",
   "description": "Solarized dark theme for interface components",
   "license": "MIT",
   "repository": "https://github.com/tclem/atom-solarized-dark-ui",
