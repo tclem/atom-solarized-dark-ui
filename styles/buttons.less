@@ -28,6 +28,9 @@
 .btn {
   .btn-background(@button-background-color, @button-background-color-hover, @button-background-color-selected, @text-color);
   border: 1px solid @button-border-color;
+  height: initial;
+  padding: 0 0.8em;
+  line-height: 2em;
 }
 
 .btn.btn-primary {
@@ -52,6 +55,13 @@
   }
   .btn:last-child, {
     border-right: 1px solid @button-border-color;
+  }
+}
+
+.settings-view {
+  .btn.active-syntax-settings {
+    margin-left: 2px;
+    border-radius: 3px;
   }
 }
 
